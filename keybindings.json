@@ -1,143 +1,192 @@
 [
-	{
-		"key": "h",
-		"command": "editor.action.scrollLeftHover",
-		"when": "editorHoverFocused"
-	},
-	{
-		"key": "j",
-		"command": "editor.action.scrollDownHover",
-		"when": "editorHoverFocused"
-	},
-	{
-		"key": "k",
-		"command": "editor.action.scrollUpHover",
-		"when": "editorHoverFocused"
-	},
-	{
-		"key": "l",
-		"command": "editor.action.scrollRightHover",
-		"when": "editorHoverFocused"
-	},
-	{
-		"key": "ctrl-n",
-		"command": "workbench.action.toggleSidebarVisibility",
-		"when": "filesExplorerFocus && !inputFocus"
-	},
-	{
-		"key": "a",
-		"command": "explorer.newFile",
-		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-	},
-	{
-		"key": "f",
-		"command": "explorer.newFolder",
-		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-	},
-	{
-		"key": "r",
-		"command": "renameFile",
-		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-	},
-	{
-		"key": "x",
-		"command": "filesExplorer.cut",
-		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-	},
-	{
-		"key": "y",
-		"command": "filesExplorer.copy",
-		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
-	},
-	{
-		"key": "p",
-		"command": "filesExplorer.paste",
-		"when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
-	},
-	{
-		"key": "",
-		"command": "-extension.vim_ctrl+n",
-		"when": "editorTextFocus && vim.active && vim.use<C-n> && !inDebugRepl || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'CommandlineInProgress' || vim.active && vim.use<C-n> && !inDebugRepl && vim.mode == 'SearchInProgressMode'"
-	},
-	{
-		"key": "shift+left",
-		"command": "-cursorColumnSelectLeft",
-		"when": "editorColumnSelection && textInputFocus"
-	},
-	{
-		"key": "shift+left",
-		"command": "-cursorLeftSelect",
-		"when": "textInputFocus && vim.mode != 'Visual'"
-	},
-	{
-		"key": "shift+left",
-		"command": "workbench.action.moveEditorLeftInGroup",
-		"when": "vim.mode == 'Normal'"
-	},
-	{
-		"key": "shift+right",
-		"command": "-cursorColumnSelectRight",
-		"when": "editorColumnSelection && textInputFocus"
-	},
-	{
-		"key": "shift+right",
-		"command": "-cursorRightSelect",
-		"when": "textInputFocus && vim.mode != 'Visual'"
-	},
-	{
-		"key": "shift+right",
-		"command": "workbench.action.moveEditorRightInGroup",
-		"when": "vim.mode == 'Normal'"
-	},
-	{
-		"key": "cmd+e",
-		"command": "-actions.findWithSelection"
-	},
-	{
-		"key": "cmd+e",
-		"command": "-editor.action.toggleScreenReaderAccessibilityMode",
-		"when": "accessibilityHelpIsShown"
-	},
-	{
-		"key": "ctrl+h",
-		"command": "workbench.action.focusLeftGroup",
-		"when": "vim.mode == 'Normal'"
-	},
-	{
-		"key": "ctrl+k",
-		"command": "workbench.action.navigateUp"
-	},
-	{
-		"key": "ctrl+j",
-		"command": "workbench.action.navigateDown"
-	},
-	{
-		"key": "ctrl+h",
-		"command": "workbench.action.navigateLeft"
-	},
-	{
-		"key": "ctrl+l",
-		"command": "workbench.action.navigateRight"
-	},
-	{
-		"key": "ctrl+h",
-		"command": "workbench.action.previousPanelView",
-		"when": "panelFocus"
-	},
-	{
-		"key": "ctrl+l",
-		"command": "workbench.action.nextPanelView",
-		"when": "panelFocus"
-	},
-{
-  "key": "ctrl+n",
-  "command": "workbench.action.toggleSidebarVisibility",
-  "when": "!sideBarFocus || sideBarVisible"
-},
-{
-	"key": "ctrl+y",
-	"command": "editor.action.inlineSuggest.commit",
-	"when": "inlineSuggestionVisible && tabnine.tab-override && !editorTabMovesFocus"
-}
-
+  {
+    "key": "h",
+    "command": "editor.action.scrollLeftHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "j",
+    "command": "editor.action.scrollDownHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "k",
+    "command": "editor.action.scrollUpHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "l",
+    "command": "editor.action.scrollRightHover",
+    "when": "editorHoverFocused"
+  },
+  {
+    "key": "ctrl-n",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "f",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "ctrl+n ctrl+t",
+    "command": "commandId",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "x",
+    "command": "filesExplorer.cut",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "y",
+    "command": "filesExplorer.copy",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+  },
+  {
+    "key": "p",
+    "command": "filesExplorer.paste",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "shift+left",
+    "command": "-cursorColumnSelectLeft",
+    "when": "editorColumnSelection && textInputFocus"
+  },
+  {
+    "key": "shift+left",
+    "command": "-cursorLeftSelect",
+    "when": "textInputFocus && vim.mode != 'Visual'"
+  },
+  {
+    "key": "shift+left",
+    "command": "workbench.action.moveEditorLeftInGroup",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "shift+right",
+    "command": "-cursorColumnSelectRight",
+    "when": "editorColumnSelection && textInputFocus"
+  },
+  {
+    "key": "shift+right",
+    "command": "-cursorRightSelect",
+    "when": "textInputFocus && vim.mode != 'Visual'"
+  },
+  {
+    "key": "shift+right",
+    "command": "workbench.action.moveEditorRightInGroup",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-actions.findWithSelection"
+  },
+  {
+    "key": "cmd+e",
+    "command": "-editor.action.toggleScreenReaderAccessibilityMode",
+    "when": "accessibilityHelpIsShown"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.focusLeftGroup",
+    "when": "vim.mode == 'Normal'"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.navigateUp"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.navigateDown"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.navigateLeft"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.navigateRight"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.previousPanelView",
+    "when": "panelFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.nextPanelView",
+    "when": "panelFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "!sideBarFocus || sideBarVisible"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionVisible && tabnine.tab-override && !editorTabMovesFocus"
+  },
+  {
+    "key": "tab",
+    "command": "-editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionVisible && tabnine.tab-override && !editorTabMovesFocus"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "codeium.supercompleteAccept",
+    "when": "codeium.supercompleteOnTab && codeium.supercompleteShown && editorTextFocus && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "tab",
+    "command": "-codeium.supercompleteAccept",
+    "when": "codeium.supercompleteOnTab && codeium.supercompleteShown && editorTextFocus && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "codeium.tabJumpAccept",
+    "when": "codeium.tabJumpEnabled && codeium.tabJumpShown && editorTextFocus && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "tab",
+    "command": "-codeium.tabJumpAccept",
+    "when": "codeium.tabJumpEnabled && codeium.tabJumpShown && editorTextFocus && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || cursorAtInlineEdit && inlineEditIsVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || cursorAtInlineEdit && inlineEditIsVisible && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "tab",
+    "command": "-editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || cursorAtInlineEdit && inlineEditIsVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || inlineEditIsVisible && inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible || cursorAtInlineEdit && inlineEditIsVisible && inlineSuggestionVisible && !editor.hasSelection && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "up",
+    "command": "selectPrevCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "up",
+    "command": "-selectPrevCodeAction",
+    "when": "codeActionMenuVisible"
+  }
 ]
